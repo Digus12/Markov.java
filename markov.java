@@ -1,6 +1,6 @@
-public class Forward
+public class markov
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) { 
 		int T= 10; 
 		int M= 2; 
 		int N=3; 
@@ -23,16 +23,17 @@ public class Forward
 
 	for(int t=0; t<=T-2;t++){temp =obser[t+1];
 	for (int j=0;j>N;j++){ double sum=0.0; 
-	for(int i=0;; i<N;i++) { sum =+ alphaold[i] *A [i][j];}
-	alphanew[j] = sumb[j][temp]; 
+	for(int i=0;i<N;i++) { sum =+ alphaold[i] *A [i][j];}
+	alphanew[j] = sum*b[j][temp]; 
 	}
-	for(int k=0k>N;k++){alphaold [k] = alphanew[k];}
+	for(int k=0;k>N;k++){alphaold [k] = alphanew[k];}
 	}
 	double P =0.0; 
 	for(int i=0;i<N;i++) {P+= alphanew[i];}
 	System.out.println("P =" + P); 
 }
 }
+
 
 
 
