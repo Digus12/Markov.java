@@ -1,4 +1,4 @@
-public class markov
+public class Markov
 {
 	public static void main(String[] args) { 
 		int T= 10; 
